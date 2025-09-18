@@ -7,45 +7,65 @@
 </head>
 <body>
     
-    <!-- titre -->
+    <!-- header -->
+    <header>
+        <h1>👋 Bienvenue sur ma page</h1>
+        <!-- lien interne vers la section contact -->
+        <nav>
+            <p><a href="#contact">Acceuil</a></p>
+            <p><a href="#contact">A propos</a></p>
+            <p><a href="#contact">📩 Contact</a></p>
+        </nav>
+    </header>
 
-    <h1>👋 Bienvenue sur ma page</h1>
-    <p>Salut, je m'appele <b>Sabbat</b>, je suis passionné de <em>web</em> et j'apprends le HTML.</p>
-    <!-- lien interne vers la section contact -->
-    <p><a href="#contact">📩 Voir contact</a></p>
-
+    <!-- main -->
+    <main>
     <!-- photo de profil -->
-    <h2>Ma photo</h2>
-    <figure>
-        <img src="images/profile.png" alt="photo de profil" width="250">
-        <figcaption>Sabbat - dev</figcaption>
-        <img src="https://cdn.pixabay.com/photo/2020/01/25/21/55/adult-4793442_640.jpg" alt="photo de profil" width="250"> 
-        <figcaption>Sabbat Lumpantshia</figcaption>
-    </figure>   
+        <section id="acceuil">
+            <p>Salut, je m'appele <b>Sabbat</b>, je suis passionné de <em>web</em> et j'apprends le HTML.</p>
+            <div id="profile">
+                <h2>Ma photo</h2>
+                <figure>
+                    <img src="images/profile.png" alt="photo de profil" width="250">
+                    <figcaption>Sabbat - dev</figcaption>
+                    <img src="https://cdn.pixabay.com/photo/2020/01/25/21/55/adult-4793442_640.jpg" alt="photo de profil" width="250"> 
+                    <figcaption>Sabbat Lumpantshia</figcaption>
+                </figure>
+            </div>
+        
+            <div id="links">
+                <!-- les liens externes -->
+                <h2>Mes sites préféres</h2>
+                <ul>
+                    <li><a href="https://www.youtube.com">Youtub</a></li>
+                    <li><a href="https://www.google.com">Google</a></li>
+                    <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+                </ul>
 
-     <!-- les liens externes -->
-    <h2>Mes sites préféres</h2>
-    <ul>
-        <li><a href="https://www.youtube.com">Youtub</a></li>
-        <li><a href="https://www.google.com">Google</a></li>
-        <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
-    </ul>
+                <!-- images cliquable -->
+                <div>
+                    <h2>Mes moteurs de recherche préféré</h2>
+                    <a href="https://www.google.com" target="_blank">
+                        <img src="images/google.png" alt="logo google" width="150">
+                        <img src="images/firefox.jpeg" alt="logo firefox" width="150">
+                    </a>
+                </div>
+            </div>
+        </section>  
+    </main>
 
-    <!-- images cliquable -->
-    <h2>Mes moteurs de recherche préféré</h2>
-    <a href="https://www.google.com" target="_blank">
-        <img src="images/google.png" alt="logo google" width="150">
-        <img src="images/firefox.jpeg" alt="logo firefox" width="150">
-    </a>
     <hr>
+    <!-- footer -->
+    <footer>
+        <!-- section contact -->
+        <h2 id="contact">Contact</h2>
+        <p>Vous pouvez me contacter sur email :</p>
+        <a href="mailto:slmsabbat@gmail.com">Envoyer un mail</a>
 
-    <!-- section contact -->
-    <h2 id="contact">Contact</h2>
-      <p>Vous pouvez me contacter sur email :</p>
-      <a href="mailto:slmsabbat@gmail.com">Envoyer un mail</a>
-
-    <!-- telechargement des fichiers -->
-    <p>Ou télécharger mon CV ici:</p>
-    <a href="cv/2.pdf" download>📥 Télécharger mon CV</a>
+        <!-- telechargement des fichiers -->
+        <p>Ou télécharger mon CV ici:</p>
+        <a href="cv/2.pdf" download>📥 Télécharger mon CV</a>
+    </footer>
+    
 </body>
 </html>
